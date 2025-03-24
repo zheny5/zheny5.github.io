@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郑禹 | 教育技术创新者 × 算法工程师</title>
+    <meta name="description" content="郑禹的个人主页 - 全栈开发者·AI教育布道者·科研项目导师">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <!-- 预加载图片 -->
+    <link rel="preload" as="image" href="https://picsum.photos/800/600?tech=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- 导航栏 -->
+    <nav class="bg-gradient-to-r from-indigo-500 to-blue-400 text-white sticky top-0 z-50 shadow-lg rounded-b-3xl">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-500">郑禹
+                <span class="text-gray-300 text-xl">Yu Zheng</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-blue-400 transition">关于我</a>
+                <a href="#academic" class="hover:text-blue-400 transition">学术灯塔</a>
+                <a href="#engineering" class="hover:text-blue-400 transition">工程利刃</a>
+                <a href="#education" class="hover:text-blue-400 transition">教育火种</a>
+                <a href="#contact" class="hover:text-blue-400 transition">联系方式</a>
+                <button id="lang-switch" class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-sm transition">
+                    EN/中
+                </button>
+            </div>
+            <button class="md:hidden text-xl" id="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 p-4">
+            <div class="flex flex-col space-y-3">
+                <a href="#about" class="hover:text-blue-400 transition">关于我</a>
+                <a href="#academic" class="hover:text-blue-400 transition">学术灯塔</a>
+                <a href="#engineering" class="hover:text-blue-400 transition">工程利刃</a>
+                <a href="#education" class="hover:text-blue-400 transition">教育火种</a>
+                <a href="#contact" class="hover:text-blue-400 transition">联系方式</a>
+                <button id="lang-switch-mobile" class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-sm transition w-20">
+                    EN/中
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 头部展示区 -->
+    <header class="bg-gradient-to-r from-indigo-500 to-blue-400 text-white py-20 md:py-32 rounded-b-[40px]">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">郑禹</h1>
+                <div class="text-xl md:text-2xl mb-8 text-blue-300">教育技术创新者 × 前算法工程师</div>
+                <div class="text-lg md:text-xl text-gray-300 mb-10">让知识与技术不再高冷，让学生不再头秃 ✨</div>
+                <div class="flex justify-center space-x-4">
+                    <a href="#academic" class="button float-animation">
+                        <i class="fas fa-graduation-cap mr-2"></i>学术背景
+                    </a>
+                    <a href="#engineering" class="button float-animation bg-white bg-opacity-20">
+                        <i class="fas fa-microchip mr-2"></i>工程经验
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 关于我区域 -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="./images/q版头像.png" alt="郑禹照片" class="rounded-lg shadow-xl max-w-full h-auto lazy-load">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800 relative">
+                        <span class="bg-blue-500 w-10 h-1 absolute -top-2 left-0"></span>
+                        关于我
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        作为一名专注于教育技术创新的计算机跨界人才，我致力于将前沿计算机科学技术与现代教育方法论相结合，打造高效、智能的学习生态系统。
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        简单来说，就是让知识与技术不再高冷，让学生不再头秃 ✨
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+                            <i class="fas fa-paper-plane mr-2"></i>联系我
+                        </a>
+                        <a href="#" class="border border-gray-300 px-5 py-2 rounded-lg hover:bg-gray-100 transition">
+                            <i class="fas fa-file-alt mr-2"></i>查看简历
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学术灯塔区域 -->
+    <section id="academic" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <i class="fas fa-graduation-cap text-blue-500 mr-3"></i>学术灯塔
+            </h2>
+            
+            <!-- 学术时间轴 -->
+            <div class="timeline max-w-4xl mx-auto">
+                <div class="timeline-item">
+                    <div class="timeline-dot bg-blue-500">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-sm text-gray-500 mb-1">2018 - 2022</div>
+                        <h3 class="text-xl font-bold mb-2">北京科技大学</h3>
+                        <p class="mb-2">智能科学与技术本科（GPA前5%）</p>
+                        <div class="bg-blue-50 p-3 rounded text-sm">
+                            <i class="fas fa-award text-blue-500 mr-1"></i> 优秀毕业生、校级奖学金获得者
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot bg-blue-500">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-sm text-gray-500 mb-1">2022 - 2024</div>
+                        <h3 class="text-xl font-bold mb-2">俄勒冈州立大学</h3>
+                        <p class="mb-2">Phd入学，计算机科学方向</p>
+                        <div class="bg-blue-50 p-3 rounded text-sm space-y-2">
+                            <div>
+                                <i class="fas fa-medal text-blue-500 mr-1"></i> 
+                                课程：Numerical Linear Algebra，Theory of Computation
+                            </div>
+                            <div>
+                                <i class="fas fa-medal text-blue-500 mr-1"></i> 
+                                研究方向：Computer Vision and Graphics
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot bg-blue-500">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-sm text-gray-500 mb-1">语言与认证</div>
+                        <h3 class="text-xl font-bold mb-2">专业资质</h3>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>托福101分</li>
+                            <li>英语六级560分</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 论文专利展示 -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold mb-6 text-center">论文</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-sm text-gray-500 mb-1">论文 | 2022</div>
+                        <a href="https://dl.acm.org/doi/10.1145/3531232.3531263" 
+                           target="_blank"
+                           class="group">
+                            <h4 class="text-lg font-semibold mb-2 group-hover:text-blue-600 transition">
+                                Improved Feature Generating Networks for Zero-Shot Learning
+                                <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+                            </h4>
+                        </a>
+                        <p class="text-gray-600 text-sm"></p>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-sm text-gray-500 mb-1">论文 | 2024</div>
+                        <h4 class="text-lg font-semibold mb-2">
+                            Robust Color Correction for HDR Images with Colored Light Sources and Varying Textures
+                        </h4>
+                        <a href="paper2024.pdf" 
+                           download
+                           class="inline-flex items-center text-blue-600 hover:text-blue-800 transition">
+                            <i class="fas fa-file-pdf mr-1"></i>
+                            下载PDF
+                        </a>
+                        <p class="text-gray-600 text-sm"></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工程利刃区域 -->
+    <section id="engineering" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <i class="fas fa-microchip text-blue-500 mr-3"></i>工程利刃
+            </h2>
+            
+            <!-- 项目展示卡片 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="project-card bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://picsum.photos/800/600?tech=2" alt="医疗影像优化系统" class="w-full h-48 object-cover lazy-load">
+                        <div class="absolute top-0 right-0 bg-blue-500 text-white px-3 py-1 m-2 rounded text-sm">医疗影像</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">医疗影像优化系统</h3>
+                        <p class="text-gray-600 mb-4">创新共现图+ILP算法，珠海三甲医院部署，优化医学影像处理流程。</p>
+                        <div class="flex justify-between items-center">
+                            <div class="text-sm text-gray-500">
+                                <i class="fas fa-calendar-alt mr-1"></i>2021-2022
+                            </div>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition" 
+                                    onclick="showProjectModal('medical')">
+                                查看详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://picsum.photos/800/600?tech=3" alt="小红书AR引擎" class="w-full h-48 object-cover lazy-load">
+                        <div class="absolute top-0 right-0 bg-blue-500 text-white px-3 py-1 m-2 rounded text-sm">计算机视觉</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">小红书万物AR项目</h3>
+                        <p class="text-gray-600 mb-4">改进UNet+注意力机制，分割精度提升25%，优化用户AR体验。</p>
+                        <div class="flex justify-between items-center">
+                            <div class="text-sm text-gray-500">
+                                <i class="fas fa-calendar-alt mr-1"></i>2020-2021
+                            </div>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition"
+                                    onclick="showProjectModal('ar')">
+                                查看详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://picsum.photos/800/600?tech=4" alt="HDR色彩校正模块" class="w-full h-48 object-cover lazy-load">
+                        <div class="absolute top-0 right-0 bg-blue-500 text-white px-3 py-1 m-2 rounded text-sm">图像处理</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">HDR色彩校正模块</h3>
+                        <p class="text-gray-600 mb-4">仿生视觉算法，审美指标超越SOTA技术</p>
+                        <div class="flex justify-between items-center">
+                            <div class="text-sm text-gray-500">
+                                <i class="fas fa-calendar-alt mr-1"></i>2019-2020
+                            </div>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition"
+                                    onclick="showProjectModal('hdr')">
+                                查看详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 技能雷达图 -->
+            <div class="mt-20">
+                <h3 class="text-2xl font-bold mb-10 text-center">技能矩阵</h3>
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <div class="relative rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://picsum.photos/800/600?tech=5" 
+                                 alt="技能矩阵示意图" 
+                                 class="w-full h-auto lazy-load hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 md:pl-8">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="skill-card hover:shadow-xl transition-all duration-300">
+                                <h4 class="text-lg font-semibold mb-2 text-blue-600">算法与AI</h4>
+                                <ul class="space-y-1">
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>机器学习/深度学习</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>计算机视觉</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>优化算法</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card hover:shadow-xl transition-all duration-300">
+                                <h4 class="text-lg font-semibold mb-2 text-blue-600">编程语言</h4>
+                                <ul class="space-y-1">
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Python/PyTorch</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>C++/CUDA</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>JavaScript/React</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card hover:shadow-xl transition-all duration-300">
+                                <h4 class="text-lg font-semibold mb-2 text-blue-600">教育技术</h4>
+                                <ul class="space-y-1">
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>课程设计与开发</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>学习管理系统</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>教育数据分析</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>AI辅助教学框架</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card hover:shadow-xl transition-all duration-300">
+                                <h4 class="text-lg font-semibold mb-2 text-blue-600">工程开发</h4>
+                                <ul class="space-y-1">
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>全栈开发</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>AI智能体开发</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育火种区域 -->
+    <section id="education" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <i class="fas fa-lightbulb text-blue-500 mr-3"></i>教育火种
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-3">
+                            <i class="fas fa-chalkboard-teacher text-3xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">俄勒冈州立大学TA</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">设计汇编语言课程体系，给学生debug，批改作业，上答疑课。</p>
+                    <div class="bg-blue-50 p-3 rounded text-sm">
+                        <div class="flex justify-between mb-1">
+                            <span>学生满意度</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-3">
+                            <i class="fas fa-robot text-3xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">AI科研辅导</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">开发GPT辅助框架，提供跨学科项目指导，帮助学生攻克复杂研究难题。</p>
+                    <div class="bg-blue-50 p-3 rounded text-sm">
+                        <div class="flex justify-between mb-1">
+                            <span>项目成功率</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-3">
+                            <i class="fas fa-graduation-cap text-3xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">教育创新实践</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">开发创新教学方法，整合AI技术与传统教学，提升学习效果。</p>
+                    <div class="bg-blue-50 p-3 rounded text-sm">
+                        <div class="flex justify-between mb-1">
+                            <span>学生进步率</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式区域 -->
+    <section id="contact" class="py-16 bg-gradient-to-r from-indigo-500 to-blue-400 text-white rounded-t-[40px]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">联系方式</h2>
+            
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">联系信息</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <div class="bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-sm">电子邮件</div>
+                                <a href="mailto:yu.zheng.0223@gmail.com" class="hover:text-blue-300 transition">yu.zheng.0223@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-weixin"></i>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-sm">微信</div>
+                                <span class="hover:text-blue-300 transition">zy_the_best</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-sm">领英</div>
+                                <a href="https://www.linkedin.com/in/yu-zheng-0b922225b" class="hover:text-blue-300 transition">linkedin.com/in/yuzheng</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-sm">GitHub</div>
+                                <a href="https://github.com/zhengy5" class="hover:text-blue-300 transition">github.com/zhengy5</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-sm">工作地点</div>
+                                <span>远程工作 / 深圳 / 上海 / 广州 / 杭州</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">快速留言</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1">您的名字</label>
+                            <input type="text" class="w-full px-3 py-2 bg-gray-700 rounded border border-gray-600 text-white focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1">您的邮箱</label>
+                            <input type="email" class="w-full px-3 py-2 bg-gray-700 rounded border border-gray-600 text-white focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1">留言内容</label>
+                            <textarea class="w-full px-3 py-2 bg-gray-700 rounded border border-gray-600 text-white focus:outline-none focus:border-blue-500" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded transition">
+                            发送留言
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-github text-xl"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+            <p>© 2025 郑禹. 保留所有权利.</p>
+            <p class="text-sm mt-2">教育技术创新者 × 前算法工程师</p>
+        </div>
+    </footer>
+
+    <!-- 项目详情模态框 -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-screen overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 id="modal-title" class="text-2xl font-bold"></h3>
+                    <button id="close-modal" class="text-gray-500 hover:text-gray-800">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入必要的JS库 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
